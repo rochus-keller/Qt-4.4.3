@@ -202,7 +202,7 @@ protected:
     void updateGeometries();
 
     int sizeHintForColumn(int column) const;
-    int indexRowSizeHint(const QModelIndex &index) const;
+    virtual int indexRowSizeHint(const QModelIndex &index) const; // modified by rochus
     int rowHeight(const QModelIndex &index) const;
 
     void horizontalScrollbarAction(int action);
